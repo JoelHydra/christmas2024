@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@keyframes color-shift {
+    to {
+        background-position: 4500vh;
+    }
+}
+:root{
+    --blue1: #8485cd;
+    --blue2: #00a6ff;
+    --purple1: #c1afeb;
+    --teal1: #62a5a5;
+    --pink1: #fcbee1;
+    --lightpink1: #e4c3e2;
+    --pink2: #df6bdf;
+    --gray1: rgb(69, 69, 69);
+    --darkpurple1: #200030;
+    --darkblue1: #00043a;
+    --darkred1: #3a0000;
+    --darkteal1: #00372b;
+}
+.final-sendoff{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: Optima, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    user-select: none;
+    gap: 50px;
+}
+.final-message{
+    text-align: center;
+}
+.ps{
+    text-align: center;
+    font-size: 12px;
+}

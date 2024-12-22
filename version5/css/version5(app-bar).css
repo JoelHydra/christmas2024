@@ -1,0 +1,97 @@
+.apps{
+    height: 70%;
+    width: 40%;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+}
+.notepad-app{
+    position: relative;
+    height: 43px;
+    width: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.google-chrome-app{
+    position: relative;
+    height: 43px;
+    width: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 7px;
+}
+.app-selected{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.notepad-app:hover{
+    background: rgba(108, 108, 108, 0.277);
+}
+.notepad-app:hover .app-selected {
+    border: 0.3px solid rgba(97, 97, 97, 0.277);
+    border-radius: 7px;
+}
+.google-chrome-app:hover{
+    background: rgba(108, 108, 108, 0.277);
+}
+.google-chrome-app:hover .app-selected {
+    border: 0.3px solid rgba(97, 97, 97, 0.277);
+    border-radius: 7px;
+}
+.selected-bg{
+    background: rgba(108, 108, 108, 0.277);
+}
+.selected-border{
+    border: 0.3px solid rgba(97, 97, 97, 0.277);
+    border-radius: 7px;
+}
+.notepad-logo{
+    position: relative;
+    max-height: 90px;
+    max-width: 90px;
+    background: none;
+    margin-bottom: 3px;
+}
+.google-chrome-logo{
+    position: relative;
+    max-height: 55px;
+    max-width: 55px;
+    background: none;
+    margin-bottom: 3px;
+}
+.white-circle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+.bar{
+    position: absolute;
+    top: 89%;
+    width: 6.5px;
+    height: 3.5px;
+    border-radius: 3px;
+    background: rgb(175, 175, 175);
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+.targeted{
+    opacity: 1;
+}
+.no-highlight {
+    user-select: none;
+}
