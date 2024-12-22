@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const nextButton = document.querySelector('.next');
     const previousButton = document.querySelector('.previous');
-    const slideshow = document.querySelector('.slideshow'); // Select the slideshow container
+    const slideshow = document.querySelector('.slideshow');
     const children = slideshow.children;
-    let currentPosition = 0; // Start at the first content block
+    let currentPosition = 0;
   
-    // Next button event listener
     nextButton.addEventListener('click', () => {
       currentPosition = (currentPosition + 1)
       if (currentPosition === 9) {
@@ -14,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log(currentPosition)
       for (let i = 0; i < children.length; i++) {
         if (i === currentPosition) {
-          children[i].classList.add('active'); // Add 'active' to the current position
+          children[i].classList.add('active');
         } else {
-            children[i].classList.remove('active'); // Remove 'active' from other items
+            children[i].classList.remove('active');
         }
       }
     });
