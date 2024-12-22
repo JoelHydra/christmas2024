@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Select the element with the class or ID 'close'
-    const close = document.querySelector('.close'); // Adjust selector as needed
+    const close = document.querySelector('.close');
     const minimize = document.querySelector('.minimize');
-    const link2 = document.querySelector('#notepad-link'); // Adjust selector as needed
-    const changed = "The link has been changed!"; // Define the variable
+    const link2 = document.querySelector('#notepad-link');
+    const changed = "The link has been changed!";
     const notepadImage = document.getElementById('notepad-image');
     const notepadText = document.getElementById('notepad-text');
 
-    // Check if the element exists to avoid runtime errors
     if (close) {
         close.addEventListener('click', () => {
-            // Check if the clicked element has the 'close' class
             if (close.classList.contains('close')) {
-                link2.href = ""; // Update the link
                 notepadApp2.style.display = "none"
                 notepadappBar.style.backgroundColor = 'transparent';
                 notepadappBar.style.width = '0px';
@@ -21,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 notepadappSelected.classList.remove('selected-border');
                 notepadappBar.classList.remove('targeted');
                 notepadappBar.classList.remove('active');
-                console.log(changed); // Log the message
+                console.log(changed);
             }
             if (googlechromeappBar.classList.contains('active')) {
                 console.log('Element has the "active" class');
